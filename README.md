@@ -21,7 +21,7 @@ Protein-protein interactions (PPIs) are fundamental to almost all cellular proce
 
 MicroEnvPPI optimizes residue microenvironment representation through a two-stage framework to achieve high-precision PPI prediction.
 
-![MicroEnvPPI Framework](MicroEnvPPI/assets/framework.png)
+![MicroEnvPPI Framework](MicroEnvPPI/asset/framework.png)
 
 *Figure 1: Overview of the MicroEnvPPI framework, detailing pretraining with auxiliary tasks and downstream PPI modeling.*
 
