@@ -93,7 +93,8 @@ python train.py --dataset SHS27k --split_mode dfs --ckpt_path "../results/SHS27k
 If you wish to start from raw data and fully reproduce our data processing and model training pipeline, please follow these steps.
 
 ### 1. Environment Setup
-（同上文“快速开始”部分）
+conda env create -f environment.yml
+conda activate MicroEnvPPI
 
 ### 2. Data Preparation
 
@@ -132,3 +133,4 @@ If you wish to start from raw data and fully reproduce our data processing and m
     # Example: Resume GIN downstream task training
     python train.py --dataset STRING --split_mode random --resume ../results/STRING/.../gin_cl_aux_randmcm_checkpoint.pth
     ```
+
