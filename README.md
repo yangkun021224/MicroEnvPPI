@@ -5,14 +5,6 @@
 [![PyTorch 2.0.0+](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![DGL 2.0+](https://img.shields.io/badge/DGL-2.0-orange.svg)](https://www.dgl.ai/)
 
-This repository contains the official PyTorch implementation for our paper:
-
-> **MicroEnvPPI: Microenvironment-Aware Optimization for Protein–Protein Interaction Prediction**
->
-> *Kun Yang, Zhen Li, Yifan Chen, Linlin Zhuo*, Yanshi Wei, Haiyang Hu, Dongsheng Cao*, Aiping Lu, Quan Zou and Xiangzheng Fu**
->
-> ([Link to Paper - TBD]())
-
 ## Abstract
 
 Protein-protein interactions (PPIs) are fundamental to almost all cellular processes. To address the limitations of existing computational models in characterizing residue microenvironments, we propose MicroEnvPPI, a novel PPI prediction framework that focuses on optimizing microenvironment representation. This work significantly improves prediction accuracy and generalization capability on challenging datasets by integrating powerful ESM-2 language model embeddings and innovative multi-task self-supervised pretraining strategies (including graph contrastive learning).
@@ -140,24 +132,3 @@ If you wish to start from raw data and fully reproduce our data processing and m
     # Example: Resume GIN downstream task training
     python train.py --dataset STRING --split_mode random --resume ../results/STRING/.../gin_cl_aux_randmcm_checkpoint.pth
     ```
-
-## Citation
-
-If our work is helpful to your research, please consider citing our paper:
-
-```bibtex
-@article{yang2024microenvppi,
-  title={MicroEnvPPI: Microenvironment-Aware Optimization for Protein–Protein Interaction Prediction},
-  author={Yang, Kun and Li, Zhen and Chen, Yifan and Zhuo, Linlin and Wei, Yanshi and Hu, Haiyang and Cao, Dongsheng and Lu, Aiping and Zou, Quan and Fu, Xiangzheng},
-  journal={TBD},
-  year={2024}
-}
-```
-
-## Contact
-
-If you have any questions or suggestions, please feel free to communicate with us through GitHub Issues, or contact the corresponding authors directly:
-- **Linlin Zhuo**: 20210339@wzut.edu.cn
-- **Dongsheng Cao**: oriental-cds@163.com
-- **Xiangzheng Fu**: fxzheng@hkbu.edu.cn
-```
