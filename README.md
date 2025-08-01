@@ -20,6 +20,10 @@ MicroEnvPPI optimizes residue microenvironment representation through a two-stag
 ## File Structure
 
 ```
+esm2_t33_650M_UR50D/
+├── model.safetensors     
+├── tokenizer_config.json
+...
 MicroEnvPPI/
 ├── assets/        
 ├── configs/             
@@ -58,6 +62,10 @@ conda activate MicroEnvPPI
 
 #### 2. Download Data and Pre-trained Models
 
+-   **esm2_t33_650M_UR50D**:
+    -   Download link: [esm2_t33_650M_UR50D (huggingface)](https://huggingface.co/facebook/esm2_t33_650M_UR50D/tree/main)
+    -   After downloading, extract and place all contents in the esm2_t33_650M_UR50D/ folder under the project root directory.
+    -   
 -   **Required: Download processed data**
     -   We strongly recommend downloading our processed data directly to skip the tedious data preprocessing steps.
     -   Download link: [processed_data.zip (Google Drive)](https://drive.google.com/file/d/1mWrgzMxuHHIMsDA2OL8r0lNShiCUWc6Y/view?usp=drive_link)
@@ -75,14 +83,18 @@ After downloading and placing the above files, you can directly run the followin
 
 cd src
 
+python generate_esm_embeddings.py  #Choose the corresponding: dataset = "SHS27k" #"STRING"or"SHS148k"
+
+#Pay attention to replacing it with your own weight file path
+
 # Evaluate on SHS27k (random split)
-python train.py --dataset SHS27k --split_mode random --ckpt_path "../results/SHS27k/2025-04-29_17-21-12_279/VAE_CL_Aux_RandMCM/vae_model.ckpt"
+python train.py --dataset SHS27k --split_mode random --ckpt_path "/root/autodl-tmp/MicroEnvPPI/results/SHS27k/2025-04-29_17-21-12_279/vae_model.ckpt"
 
 # Evaluate on SHS27k (bfs split)
-python train.py --dataset SHS27k --split_mode bfs --ckpt_path "../results/SHS27k/2025-04-30_01-13-55_572/VAE_CL_Aux_RandMCM/vae_model.ckpt"
+python train.py --dataset SHS27k --split_mode bfs --ckpt_path "/root/autodl-tmp/MicroEnvPPI/results/SHS27k/2025-04-29_18-34-09_183/vae_model.ckpt"
 
 # Evaluate on SHS27k (dfs split)
-python train.py --dataset SHS27k --split_mode dfs --ckpt_path "../results/SHS27k/2025-04-29_18-34-09_183/VAE_CL_Aux_RandMCM/vae_model.ckpt"
+python train.py --dataset SHS27k --split_mode dfs --ckpt_path "/root/autodl-tmp/MicroEnvPPI/results/SHS27k/2025-04-30_01-13-55_572/vae_model.ckpt"
 ```
 
 
@@ -97,7 +109,10 @@ conda env create -f environment.yml
 conda activate MicroEnvPPI
 
 ### 2. Data Preparation
-
+-   **esm2_t33_650M_UR50D**:
+    -   Download link: [esm2_t33_650M_UR50D (huggingface)](https://huggingface.co/facebook/esm2_t33_650M_UR50D/tree/main)
+    -   After downloading, extract and place all contents in the esm2_t33_650M_UR50D/ folder under the project root directory.
+      
 -   **Download raw data**:
     -   Download link: [raw_data.rar (Google Drive)](https://drive.google.com/file/d/1nq5UZIhkrMUsS_N4oVKs5l3fM82JsFZl/view?usp=drive_link)
     -   After downloading, extract and place all contents in the raw_data/ folder under the project root directory. Ensure it contains the STRING_AF2DB subfolder with PDB files.
