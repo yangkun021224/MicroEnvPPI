@@ -122,6 +122,8 @@ conda activate MicroEnvPPI
     -  **Note**: Please make sure to modify the dataset and local_model_path variables in the script before running.
     ```bash
     cd src
+    
+    #Choose the corresponding: dataset = "SHS27k" #"STRING"or"SHS148k"
     python generate_esm_embeddings.py
     ```
 
