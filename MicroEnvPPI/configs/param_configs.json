@@ -14,10 +14,10 @@
       "gin_final_dropout": 0.3,
       "learning_rate": 0.0002,
       "weight_decay": 5e-05,
-      "max_epoch": 5000,
+      "max_epoch": 2000,
       "batch_size": 4096,
       "scheduler_patience": 8,
-      "patience": 2200,
+      "patience": 500,
       "log_num": 100,
       "num_workers": 8,
 
@@ -63,10 +63,10 @@
       "gin_final_dropout": 0.5,
       "learning_rate": 0.0001,
       "weight_decay": 5e-05,
-      "max_epoch": 5000,
+      "max_epoch": 2000,
       "batch_size": 4096,
       "scheduler_patience": 6,
-      "patience": 2300,
+      "patience": 500,
       "log_num": 100,
       "num_workers": 14,
 
@@ -113,10 +113,10 @@
       "gin_final_dropout": 0.6,
       "learning_rate": 5e-05,
       "weight_decay": 0.0001,
-      "max_epoch": 7000,
+      "max_epoch": 2000,
       "batch_size": 10240,
       "scheduler_patience": 7,
-      "patience": 2700,
+      "patience": 500,
       "log_num": 100,
       "num_workers": 10,
 
@@ -164,10 +164,10 @@
       "gin_final_dropout": 0.6,
       "learning_rate": 0.0001,
       "weight_decay": 0.0001,
-      "max_epoch": 3000,
+      "max_epoch": 2000,
       "batch_size": 16384,
       "scheduler_patience": 6,
-      "patience": 1000,
+      "patience": 500,
       "log_num": 100,
       "num_workers": 8,
 
@@ -213,10 +213,10 @@
       "gin_final_dropout": 0.5,
       "learning_rate": 0.0001,
       "weight_decay": 0.0001,
-      "max_epoch": 2200,
+      "max_epoch": 2000,
       "batch_size": 16384,
       "scheduler_patience": 5,
-      "patience": 900,
+      "patience": 500,
 
       "log_num": 50,
       "num_workers": 14,
@@ -291,12 +291,12 @@
       "pretrain_patience": 8,
 
 
-      "max_epoch": 2200,
+      "max_epoch": 2000,
       "batch_size":16384,
       "learning_rate": 0.0001,
       "gin_final_dropout": 0.5,
       "scheduler_patience": 5,
-      "patience": 900,
+      "patience": 500,
 
 
       "log_num": 50,
@@ -356,7 +356,7 @@
       "learning_rate": 0.0001 ,
       "gin_final_dropout": 0.5,
       "scheduler_patience": 4,
-      "patience": 700,
+      "patience": 500,
 
 
       "log_num": 70,
@@ -467,12 +467,12 @@
       "pretrain_patience": 8,
 
 
-      "max_epoch": 700,
+      "max_epoch": 2000,
       "batch_size": 32768,
       "learning_rate": 0.0001,
       "gin_final_dropout": 0.6,
       "scheduler_patience": 2,
-      "patience": 200,
+      "patience": 500,
 
 
       "log_num": 100,
